@@ -14,7 +14,9 @@ body {
   margin: auto;
 }
 
-/* Header */
+/* 
+    Header 
+*/
 
 header {
   height: 100px;
@@ -42,7 +44,9 @@ header .container {
   background-color: #B28756;
 }
 
-/* Menu */
+/* 
+    Menu 
+*/
 
 .menu {
   flex: 1;
@@ -74,9 +78,26 @@ header .container {
   color: #ccc;
 }
 
-/* Main */
+/* 
+    Main 
+*/
 
-/* Banner */
+/* 
+    Banner 
+*/
+
+.button {
+  display: inline-block;
+  padding: 15px 45px;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #B28756;
+}
 
 .banner {
   height: calc(100vh - 100px);
@@ -124,19 +145,6 @@ header .container {
   text-transform: uppercase;
 }
 
-.banner a {
-  display: block;
-  padding: 15px 45px;
-  border-radius: 20px;
-  margin-top: 20px;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
-  background-color: #B28756;
-}
-
 .banner .sliders-pointers {
   display: flex;
   justify-content: center;
@@ -160,7 +168,9 @@ header .container {
   background-color: #B28756;
 }
 
-/* Section default */
+/* 
+    Section default 
+*/
 
 .default {
   padding: 50px 0;
@@ -183,16 +193,12 @@ header .container {
   color: #bbb;
 }
 
-.default .container {
-  height: 300px;
-  background-color: #ccc;
-}
-
 .default.light {
   background-color: #f7f7f7;
 }
 
-.default.light .section-title {
+.default.light .section-title,
+.default.light .container {
   color: #000;
 }
 
@@ -200,6 +206,95 @@ header .container {
   background-color: #000;
 }
 
-.default.dark .section-title {
+.default.dark .section-title,
+.default.dark .container {
   color: #fff;
+}
+
+/* *** */
+
+/* 
+    Section About Us 
+*/
+
+.section-aboutus {
+  display: flex;
+}
+
+.aboutus-left {
+  flex: 1;
+}
+
+.aboutus-left p {
+  line-height: 1.5;
+}
+
+.aboutus-left .button {
+  margin-top: 10px;
+}
+
+.aboutus-right {
+  position: relative;
+  width: 520px;
+  text-align: center;
+}
+
+.aboutus-right img {
+  max-width: 480px;
+  box-shadow: 0 5px 10px rgba(51, 51, 51, 0.74);
+}
+
+.play-video {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  width: 480px;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.play-video::before {
+  content: 'Watch';
+  width: 100%;
+  text-align: right;
+  font-size: 32px;
+  font-weight: 700;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.play-video::after {
+  content: 'Video!';
+  width: 100%;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 700;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 70px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: 0 10px 0 10px;
+  font-size: 100px;
+  color: #f7f7f7;
+  cursor: pointer;
+}
+
+.play-arrow {
+  width: 30px;
+  height: 30px;
+  border: 17px solid;
+  border-color: transparent transparent transparent #fff;
+  margin-left: 20px;
 }

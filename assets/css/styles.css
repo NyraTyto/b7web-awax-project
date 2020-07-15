@@ -83,7 +83,7 @@ header .container {
 */
 
 /* 
-    Banner 
+    Banner area
 */
 
 .button {
@@ -169,7 +169,7 @@ header .container {
 }
 
 /* 
-    Section default 
+    Default section
 */
 
 .default {
@@ -214,11 +214,12 @@ header .container {
 /* *** */
 
 /* 
-    Section About Us 
+    About Us section
 */
 
 .section-aboutus {
   display: flex;
+  height: 320px;
 }
 
 .aboutus-left {
@@ -236,6 +237,7 @@ header .container {
 .aboutus-right {
   position: relative;
   width: 520px;
+  height: 300px;
   text-align: center;
 }
 
@@ -300,7 +302,7 @@ header .container {
 }
 
 /*
-    Section Services
+    Services section
 */
 
 .section-services {
@@ -328,4 +330,106 @@ header .container {
   margin-top: 10px;
   font-size: 13px;
   color: #777;
+}
+
+/*
+    Projects section
+*/
+
+.section-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+    Filters menu
+*/
+
+.projects-filters {
+  display: inline-block;
+  padding: 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #eee;
+}
+
+.projects-filters li {
+  display: inline-block;
+  padding: 15px 20px;
+  border-right: 1px solid #ccc;
+  border-bottom: 3px solid #eee;
+  font-size: 13px;
+  color: #333;
+  list-style: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.projects-filters li:last-child {
+  border-right: 0;
+}
+
+.projects-filters li:hover,
+.projects-filters li.active {
+  border-bottom: 3px solid #B28756;
+}
+
+/*
+    Photos area
+*/
+
+.projects-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  max-width: 1140px;
+  margin-top: 20px;
+}
+
+.photo {
+  width: 280px;
+}
+
+.photo-area {
+  width: 255px;
+  height: 160px;
+  margin: 13px;
+}
+
+.photo-area img {
+  width: inherit;
+  height: inherit;
+}
+
+.photo-info {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: default;
+}
+
+.photo-info h5 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.photo-info p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #eee;
+}
+
+.photo-area:hover .photo-info {
+  display: flex;
 }

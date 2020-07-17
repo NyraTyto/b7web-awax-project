@@ -614,7 +614,29 @@ header .container {
 }
 
 .client-quote p {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.8;
   color: #444;
+}
+
+/*
+    Sponsors section
+*/
+
+.sponsors {
+  height: 130px;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+
+.sponsors-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sponsors-icons img {
+  width: 80px;
+  margin: 0 40px;
 }

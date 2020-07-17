@@ -109,7 +109,7 @@ header .container {
 }
 
 .banner .sliders {
-  width: 1000vw;
+  width: 300vw;
   height: 100%;
 }
 
@@ -382,25 +382,25 @@ header .container {
 .projects-photos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   width: 100vw;
   max-width: 1140px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .photo {
-  width: 280px;
+  width: 260px;
+  margin-bottom: 30px;
 }
 
 .photo-area {
-  width: 255px;
+  width: inherit;
   height: 160px;
-  margin: 13px;
 }
 
 .photo-area img {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
 }
 
 .photo-info {
@@ -432,4 +432,108 @@ header .container {
 
 .photo-area:hover .photo-info {
   display: flex;
+}
+
+/*
+    Team section
+*/
+
+.bg-team {
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-position: top;
+  padding: 0;
+}
+
+.section-team-area {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px 0;
+}
+
+.section-team {
+  margin: auto;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.section-team .sliders {
+  width: 300vw;
+  height: 100%;
+}
+
+.section-team .slide {
+  display: inline-block;
+  width: 275px;
+  height: 100%;
+  min-height: 300px;
+  background-color: #fff;
+  margin-right: 30px;
+}
+
+.section-team .slide-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 40px;
+  color: #333;
+}
+
+.section-team-area .sliders-pointers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  margin-top: 30px;
+}
+
+.section-team-area .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #B28756;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.section-team-area .pointer.active {
+  background-color: #B28756;
+}
+
+.team-avatar {
+  width: 150px;
+  height: auto;
+}
+
+.team-name {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.team-role {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.team-social {
+  display: flex;
+  margin-top: 30px;
+}
+
+.team-social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #ccc;
+}
+
+.team-social a:hover {
+  background-color: #B28756;
 }

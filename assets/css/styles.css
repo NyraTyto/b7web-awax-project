@@ -883,3 +883,63 @@ header .container {
   text-transform: uppercase;
   color: #bbb;
 }
+
+/*
+    Contact us section
+*/
+
+.section-contact-us {
+  max-width: 600px;
+  margin: auto;
+}
+
+.section-contact-us form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-contact-us .inputs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.section-contact-us input[placeholder="Name"],
+.section-contact-us input[placeholder="Email"] {
+  width: 285px;
+}
+
+.section-contact-us input[placeholder="Subject"],
+.section-contact-us input[placeholder="Message"] {
+  width: 100%;
+}
+
+.section-contact-us input:first-child {
+  margin-right: 30px;
+}
+
+.section-contact-us input {
+  padding: 10px 2px;
+  border: none;
+  border-bottom: 2px solid #bbb;
+  margin-bottom: 30px;
+  background: none;
+  outline: none;
+}
+
+.section-contact-us input:hover,
+.section-contact-us input:focus {
+  border-bottom: 2px solid #B28756;
+}
+
+.section-contact-us input::placeholder {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.section-contact-us input[placeholder="Message"] {
+  margin-top: 40px;
+}

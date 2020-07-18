@@ -352,7 +352,8 @@ header .container {
 .service p {
   margin-top: 10px;
   font-size: 13px;
-  color: #777;
+  line-height: 1.7;
+  color: #999;
 }
 
 /*
@@ -773,4 +774,41 @@ header .container {
 
 .features-below .button {
   margin-top: 40px;
+}
+
+/* Facts section */
+
+.section-facts {
+  display: flex;
+}
+
+.fact {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 50px;
+}
+
+.fact h1 {
+  font-size: 40px;
+  color: #B28756;
+}
+
+.fact hr {
+  width: 15px;
+  margin: 2px 0 5px 0;
+}
+
+.fact h4 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.fact p {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #999;
 }

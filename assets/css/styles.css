@@ -229,8 +229,8 @@ header .container {
 }
 
 .default.white {
-  border-top: 2px solid #ddd;
-  border-bottom: 2px solid #ddd;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
   background-color: #fff;
 }
 
@@ -811,4 +811,75 @@ header .container {
   font-size: 13px;
   line-height: 1.7;
   color: #999;
+}
+
+/*
+    Social medias section
+*/
+
+.social-medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.media:last-child {
+  margin-right: 0;
+}
+
+.media:first-child img {
+  border-radius: 0;
+  margin: 0;
+}
+
+.share img {
+  width: 30px;
+}
+
+.media-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.twitter {
+  background-color: rgb(52, 197, 241);
+}
+
+.linkedin {
+  background-color: rgb(18, 123, 181);
+}
+
+.facebook {
+  background-color: rgb(51, 98, 150);
+}
+
+.google-plus {
+  background-color: rgb(230, 66, 56);
+}
+
+.pinterest {
+  background-color: rgb(186, 25, 41);
+}
+
+.media .title {
+  font-size: 16px;
+  cursor: default;
+}
+
+.media h5 {
+  margin-left: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bbb;
 }

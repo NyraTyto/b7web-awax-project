@@ -79,6 +79,8 @@ header .container {
   transition: all .8s ease;
 }
 
+/* *** */
+
 /* 
     Main 
 */
@@ -189,6 +191,14 @@ header .container {
     Default section
 */
 
+.light {
+  background-color: #f7f7f7;
+}
+
+.dark {
+  background-color: #000;
+}
+
 .default {
   padding: 50px 0;
 }
@@ -210,31 +220,25 @@ header .container {
   color: #bbb;
 }
 
-.default.light {
-  background-color: #f7f7f7;
-}
-
 .default.light .section-title,
 .default.light .container {
   color: #000;
 }
 
-.default.dark {
-  background-color: #000;
-}
 
 .default.dark .section-title,
-.default.dark .container {
+.dark .container {
   color: #fff;
 }
 
-.default.white {
+/* *** */
+
+.white {
+  padding: 30px;
   border-top: 2px solid #eee;
   border-bottom: 2px solid #eee;
   background-color: #fff;
 }
-
-/* *** */
 
 /* 
     About Us section
@@ -490,8 +494,9 @@ header .container {
   width: 275px;
   height: 100%;
   min-height: 300px;
-  background-color: #fff;
+  border-radius: 2px;
   margin-right: 30px;
+  background-color: #fff;
   cursor: default;
 }
 
@@ -651,6 +656,7 @@ header .container {
   flex: 1;
   text-align: center;
   padding: 30px 50px;
+  border-radius: 2px;
   margin-right: 30px;
   background-color: #fff;
 }
@@ -942,4 +948,59 @@ header .container {
 
 .section-contact-us input[placeholder="Message"] {
   margin-top: 40px;
+}
+
+.section-contact-us button {
+  cursor: pointer;
+}
+
+/*
+    Map area
+*/
+
+.section-address {
+  background-image: url(../images/mapa.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0;
+}
+
+.section-address-area {
+  margin: auto;
+  width: 100vw;
+  max-width: 1140px;
+}
+
+.section-map-info {
+  width: 50%;
+  padding: 60px 45px;
+  border-radius: 2px;
+  color: #666;
+  background-color: #fff;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-item--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #bbb;
+}
+
+.info-item p {
+  margin-left: 15px;
+  font-size: 14px;
 }

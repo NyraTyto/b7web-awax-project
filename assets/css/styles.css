@@ -228,6 +228,12 @@ header .container {
   color: #fff;
 }
 
+.default.white {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  background-color: #fff;
+}
+
 /* *** */
 
 /* 
@@ -567,12 +573,6 @@ header .container {
   overflow: hidden;
 }
 
-.section-clients .slide-area {
-  margin: auto;
-  max-width: 700px;
-  text-align: center;
-}
-
 .section-clients .sliders {
   width: 1000vw;
   height: 100%;
@@ -589,6 +589,9 @@ header .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  max-width: 700px;
+  text-align: center;
   height: 100%;
 }
 
@@ -624,19 +627,13 @@ header .container {
 */
 
 .sponsors {
-  height: 130px;
-  border-top: 2px solid #ddd;
-  border-bottom: 2px solid #ddd;
-}
-
-.sponsors-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.sponsors-icons img {
+.sponsors img {
   width: 80px;
   margin: 0 40px;
 }
@@ -705,4 +702,75 @@ header .container {
   font-weight: 600;
   color: #fff;
   background-color: #B28756;
+}
+
+/*
+    More Features area
+*/
+
+.more-features .sliders {
+  width: 1000vw;
+  height: 100%;
+}
+
+.more-features .slide {
+  display: inline-block;
+  width: 100vw;
+  height: 100%;
+}
+
+.more-features .slide-area {
+  margin: auto;
+  max-width: 1040px;
+  height: 100%;
+}
+
+.features-product {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  margin: 30px 0 0 80px;
+}
+
+.box-image {
+  padding-left: 50px;
+}
+
+.feature-description {
+  margin-left: 20px;
+}
+
+.feature-description h4 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.feature-description p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #888;
+}
+
+.feature-description li {
+  margin-top: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  list-style: none;
+  color: #888;
+}
+
+.features-below {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-below .button {
+  margin-top: 40px;
 }
